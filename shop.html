@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Барбершоп «Бородинский»</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="main-header">
+		<div class="container">
+			<nav class="main-navigation">
+				<ul>
+					<li>
+						<a href="#">Информация</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="#">Прайс-лист</a>
+					</li>
+					<li>
+						<a href="shop.html">Магазин</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user-block">
+				<a class="login" href="#">Вход</a>
+			</div>
+		</div>
+	</header>
+	<main class="container">
+		<h1>Средства для ухода</h1>
+		<ul class="breadcrumps">
+			<li class="breadcrumps-item"><a href="index.html">Главная</a></li>
+			<li class="breadcrumps-item"><a href="#">Магазин</a></li>
+			<li class="breadcrumps-item"><span>Средства для ухода</span></li>
+		</ul>
+		<div class="shop-content">
+			<div class="shop-content-left">
+				<form class="products-filter-form" action="https://echo.htmlacademy.ru" method="post">
+					<h2>Производители:</h2>
+					<ul class="manufacture-list">
+						<li class="manufacture-item manufacture-item-sel"><a href="#">Baxter of California</a></li>
+						<li class="manufacture-item"><a href="#">MR Natty</a></li>
+						<li class="manufacture-item manufacture-item-sel"><a href="#">Suavecito</a></li>
+						<li class="manufacture-item"><a href="#">Malin+Goets</a></li>
+						<li class="manufacture-item"><a href="#">Murray`s</a></li>
+						<li class="manufacture-item manufacture-item-sel"><a href="#">American Crew</a></li>
+					</ul>
+					<h2>Группы товаров:</h2>
+					<input id="group-1" class="radio-button" type="radio" name="group" value="1"><label for="group-1"><span>Бритвенные принадлежности</span></label><br>
+					<input id="group-2" class="radio-button" type="radio" name="group" value="2" checked><label for="group-2"><span>Средства для ухода</span></label><br>
+					<input id="group-3" class="radio-button" type="radio" name="group" value="3"><label for="group-3"><span>Аксессуары</span></label><br>
+					<button class="btn" type="submit">Показать</button>
+				</form>
+			</div>
+			<div class="shop-content-right">
+				
+			</div>
+		</div>
+	</main>
+	<footer class="main-footer">
+		<div class="container">
+			<section class="footer-contacts">
+				Барбершоп «Бородинский»<br>
+				Адрес: г. Санкт-Петербург, Б.Конюшенная, д. 19/8<br>
+				<a href="#">Как нас найти?</a><br>
+				Телефон: +7 (812) 666-02-66
+			</section>
+			<section class="footer-social">
+				<p>Давайте дружить!</p>
+				<a class="social-btn social-btn-vk" href="#">В контакте</a>
+				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+			</section>
+			<section class="footer-copyright">
+				<p>Разработано:</p>
+				<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+			</section>
+		</div>
+	</footer>
+</body>
+</html>
