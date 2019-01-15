@@ -11,15 +11,18 @@
 			<nav class="main-navigation">
 				<ul>
 					<li>
+						<a href="index.html">Главная</a>
+					</li>
+					<li>
 						<a href="#">Информация</a>
 					</li>
 					<li>
 						<a href="#">Новости</a>
 					</li>
 					<li>
-						<a href="#">Прайс-лист</a>
+						<a href="price.html">Прайс-лист</a>
 					</li>
-					<li>
+					<li class="main-navigation-item-active">
 						<a href="shop.html">Магазин</a>
 					</li>
 					<li>
@@ -43,14 +46,12 @@
 			<div class="shop-content-left">
 				<form class="products-filter-form" action="https://echo.htmlacademy.ru" method="post">
 					<h2>Производители:</h2>
-					<ul class="manufacture-list">
-						<li class="manufacture-item manufacture-item-sel"><a href="#">Baxter of California</a></li>
-						<li class="manufacture-item"><a href="#">MR Natty</a></li>
-						<li class="manufacture-item manufacture-item-sel"><a href="#">Suavecito</a></li>
-						<li class="manufacture-item"><a href="#">Malin+Goets</a></li>
-						<li class="manufacture-item"><a href="#">Murray`s</a></li>
-						<li class="manufacture-item manufacture-item-sel"><a href="#">American Crew</a></li>
-					</ul>
+					<input id="manufacturer-1" class="checkbox-button" type="checkbox" name="manufacturer" value="1" checked><label for="manufacturer-1"><span>Baxter of California</span></label><br>
+					<input id="manufacturer-2" class="checkbox-button" type="checkbox" name="manufacturer" value="2"><label for="manufacturer-2"><span>MR Natty</span></label><br>
+					<input id="manufacturer-3" class="checkbox-button" type="checkbox" name="manufacturer" value="3" checked><label for="manufacturer-3"><span>Suavecito</span></label><br>
+					<input id="manufacturer-4" class="checkbox-button" type="checkbox" name="manufacturer" value="4"><label for="manufacturer-4"><span>Malin+Goets</span></label><br>
+					<input id="manufacturer-5" class="checkbox-button" type="checkbox" name="manufacturer" value="5"><label for="manufacturer-5"><span>Murray`s</span></label><br>
+					<input id="manufacturer-6" class="checkbox-button" type="checkbox" name="manufacturer" value="6" checked><label for="manufacturer-6"><span>American Crew</span></label><br>
 					<h2>Группы товаров:</h2>
 					<input id="group-1" class="radio-button" type="radio" name="group" value="1"><label for="group-1"><span>Бритвенные принадлежности</span></label><br>
 					<input id="group-2" class="radio-button" type="radio" name="group" value="2" checked><label for="group-2"><span>Средства для ухода</span></label><br>
@@ -59,7 +60,94 @@
 				</form>
 			</div>
 			<div class="shop-content-right">
-				
+				<div class="products">
+					<div class="product-card">
+						<figure>
+							<img src="img/product-1.png" alt="product-1">
+						</figure>
+						<p>Набор для путешествий<br>
+						"BAXTER OF CALIFORNIA"</p>
+						<div class="product-action">
+							<span class="product-price">
+								2900 руб.
+							</span>
+							<button class="btn">Купить</button>
+						</div>
+					</div>
+					<div class="product-card">
+						<figure>
+							<img src="img/product-2.png" alt="product-2">
+						</figure>
+						<p>Увлажняющий кондиционер<br>
+						"BAXTER OF CALIFORNIA"</p>
+						<div class="product-action">
+							<span class="product-price">
+								750 руб.
+							</span>
+							<button class="btn">Купить</button>
+						</div>
+					</div>
+					<div class="product-card">
+						<figure>
+							<img src="img/product-3.png" alt="product-3">
+						</figure>
+						<p>Гель для волос<br>
+						"SUAVECITO"</p>
+						<div class="product-action">
+							<span class="product-price">
+								290 руб.
+							</span>
+							<button class="btn">Купить</button>
+						</div>
+					</div>
+					<div class="product-card">
+						<figure>
+							<img src="img/product-4.png" alt="product-4">
+						</figure>
+						<p>Глина для укладки волос<br>
+						"AMERICAN CREW"</p>
+						<div class="product-action">
+							<span class="product-price">
+								500 руб.
+							</span>
+							<button class="btn">Купить</button>
+						</div>
+					</div>
+					<div class="product-card">
+						<figure>
+							<img src="img/product-5.png" alt="product-5">
+						</figure>
+						<p>Гель для волос<br>
+						"AMERICAN CREW"</p>
+						<div class="product-action">
+							<span class="product-price">
+								500 руб.
+							</span>
+							<button class="btn">Купить</button>
+						</div>
+					</div>
+					<div class="product-card">
+						<figure>
+							<img src="img/product-6.png" alt="product-6">
+						</figure>
+						<p>Набо для бритья<br>
+						"BAXTER OF CALIFORNIA"</p>
+						<div class="product-action">
+							<span class="product-price">
+								500 руб.
+							</span>
+							<button class="btn">Купить</button>
+						</div>
+					</div>
+				</div>
+				<div class="paginator">
+					<ul>
+						<li class="paginator-item"><a href="#">1</a></li>
+						<li class="paginator-item paginator-item-active"><span>2</span></li>
+						<li class="paginator-item"><a href="#">3</a></li>
+						<li class="paginator-item"><a href="#">4</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</main>
