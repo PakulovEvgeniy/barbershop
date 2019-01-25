@@ -323,9 +323,27 @@ body {
 	font-size: 0;
 	vertical-align: top;
 	background-color: #000;
+	transition: 
+		background-color 0.5s;
 }
 
 .social-btn-vk {
-	background: url('../img/v.png') no-repeat center;
+	background: #000 url('../img/v.png') no-repeat center;
+}
+.social-btn-vk:hover {
+	background: #fff url('../img/vk.png') no-repeat center;
 }
 
+.social-btn-fb {
+	background: #000 url('../img/f.png') no-repeat center;
+}
+.social-btn-fb:hover {
+	background: #fff url('../img/fk.png') no-repeat center;
+}
+
+.social-btn-inst {
+	background: #000 url('../img/y.png') no-repeat center;
+}
+.social-btn-inst:hover {
+	background: #fff url('../img/yk.png') no-repeat center;
+}
