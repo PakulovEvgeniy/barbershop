@@ -7,25 +7,20 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
 </head>
-<body>
+<body class="inner-page">
 	<header class="main-header">
 		<div class="container clearfix">
 			<nav class="main-navigation">
+				<a href="index.html" class="logo-inner"><img src="img/logo.png" alt="Логотип" width="111" height="24"></a>
 				<ul>
-					<li>
-						<a href="index.html"><img src="img/logo.png" alt="Логотип"></a>
-					</li>
-					<li>
-						<a href="index.html">Главная</a>
-					</li>
 					<li>
 						<a href="#">Информация</a>
 					</li>
 					<li>
 						<a href="#">Новости</a>
 					</li>
-					<li class="main-navigation-item-active">
-						<a href="price.html">Прайс-лист</a>
+					<li class="active">
+						<span>Прайс-лист</span>
 					</li>
 					<li>
 						<a href="shop.html">Магазин</a>
@@ -41,53 +36,57 @@
 		</div>
 	</header>
 	<main class="container">
-		<h1>Прайс-лист</h1>
-		<ul class="breadcrumps">
-			<li class="breadcrumps-item"><a href="index.html">Главная</a></li>
-			<li class="breadcrumps-item"><span>Прайс-лист</span></li>
-		</ul>
-		<h2 class="price-header">Истинно мужская классика</h2>
-		<div class="price-content">
-			<div class="price-content-left">
-				<h3>Мы используем только<br>
-					лучшие средства:
-				</h3>
-				<ul>
-					<li>Baxter of Californiz</li>
-					<li>Mr Natty</li>
-					<li>Suavecito</li>
-					<li>Malin+Goetz</li>
-				</ul>
-			</div>
-			<div class="price-content-right">
-				<h3>Цены на услуги<br>
-					наших мастеров:
-				</h3>
-				<table>
-					<tbody>
-						<tr>
-							<td>Стрижка</td>
-							<td>1500 р.</td>
-						</tr>
-						<tr>
-							<td>Стрижка бороды</td>
-							<td>500 р.</td>
-						</tr>
-						<tr>
-							<td>Накрутка усов</td>
-							<td>350 р.</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
+		<div class="inner-page-title">
+			<h1>Прайс-лист</h1>
+			<ul class="breadcrumps">
+				<li class="breadcrumps-item"><a href="index.html">Главная</a></li>
+				<li class="breadcrumps-item"><span>Прайс-лист</span></li>
+			</ul>
 		</div>
-		<div class="price-content">
-			<h3>Несколько слов о нас:</h3>
-			<div class="price-content-left">
-				<p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество</p>
+		<div class="inner-content">
+			<div class="price-header"><h2>Истинно мужская классика</h2></div>
+			<div class="price-content clearfix">
+				<div class="price-content-left">
+					<h2>Мы используем только<br>
+						лучшие средства:
+					</h2>
+					<ul class="custom-list-1">
+						<li>Baxter of California</li>
+						<li>Mr Natty</li>
+						<li>Suavecito</li>
+						<li>Malin+Goetz</li>
+					</ul>
+				</div>
+				<div class="price-content-right">
+					<h2>Цены на услуги<br>
+						наших мастеров:
+					</h2>
+					<table class="price-table">
+						<tbody>
+							<tr>
+								<td>Стрижка</td>
+								<td>1500 р.</td>
+							</tr>
+							<tr>
+								<td>Стрижка бороды</td>
+								<td>500 р.</td>
+							</tr>
+							<tr>
+								<td>Накрутка усов</td>
+								<td>350 р.</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
-			<div class="price-content-right">
-				<p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+			<div class="price-content clearfix">
+				<h2>Несколько слов о нас:</h2>
+				<div class="price-content-left">
+					<p class="short-text">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество</p>
+				</div>
+				<div class="price-content-right">
+					<p class="short-text">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+				</div>
 			</div>
 		</div>
 	</main>
@@ -111,5 +110,28 @@
 			</section>
 		</div>
 	</footer>
+	<div class="modal-content">
+		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<h2 class="modal-content-title">Личный кабинет</h2>
+		<p>Введите свой логин и пароль</p>
+		<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+			<input class="icon-user" type="text" name="login" placeholder="Логин">
+			<input class="icon-password" type="password" name="password" placeholder="Пароль">
+			<label class="login-checkbox">
+				<input type="checkbox" name="remember">
+				<span class="checkbox-indicator"></span>
+				Запомните меня
+			</label>
+			<a href="#" class="restore">Я забыл пароль!</a>
+			<button class="btn" type="submit">Войти</button>
+		</form>
+	</div>
+	<div class="modal-content-map">
+		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<div id="yandex-map"></div>
+	</div>
+	<div class="modal-overlay"></div>
+
+	<script src="js/popup.js"></script>
 </body>
 </html>
