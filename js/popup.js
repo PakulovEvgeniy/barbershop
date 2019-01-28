@@ -34,18 +34,20 @@ form.addEventListener('submit', function (event) {
 });
 
 var popupMap = document.querySelector('.modal-content-map');
-var closeMap = popupMap.querySelector('.modal-content-close');
-var linkMap = document.querySelector('.js-open-map');
-linkMap.addEventListener('click', function (event) {
-    event.preventDefault();
-    popupMap.classList.add('modal-content-show');
-    overlay.classList.add('modal-content-show-overley');
-});
-closeMap.addEventListener('click', function (event) {
-    event.preventDefault();
-    popupMap.classList.remove('modal-content-show');
-    overlay.classList.remove('modal-content-show-overley');
-});
+if (popupMap) {
+    var closeMap = popupMap.querySelector('.modal-content-close');
+    var linkMap = document.querySelector('.js-open-map');
+    linkMap.addEventListener('click', function (event) {
+        event.preventDefault();
+        popupMap.classList.add('modal-content-show');
+        overlay.classList.add('modal-content-show-overley');
+    });
+    closeMap.addEventListener('click', function (event) {
+        event.preventDefault();
+        popupMap.classList.remove('modal-content-show');
+        overlay.classList.remove('modal-content-show-overley');
+    });
+}
 
 window.addEventListener('keydown', function (event) {
     if (event.keyCode === 27) {
@@ -54,7 +56,7 @@ window.addEventListener('keydown', function (event) {
             overlay.classList.remove('modal-content-show-overley');	
             form.classList.remove('modal-error');
         }
-        if (popupMap.classList.contains('modal-content-show')) {
+        if (popupMap && popupMap.classList.contains('modal-content-show')) {
             popupMap.classList.remove('modal-content-show');
             overlay.classList.remove('modal-content-show-overley');	
         }
