@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Roboto Medium";
+    src: url("../fonts/robotomedium.woff") format("woff"),
+         url("../fonts/robotomedium.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto.woff") format("woff"),
+         url("../fonts/robot.woff2") format("woff2");
+}
+
+body, html{
+	margin: 0;
+	padding: 0;
+}
+body {
+    min-width: 900px;
+    background-color:white;
+    color: black;
+    font-family: 'Roboto Medium', 'Arial', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+}
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.main-header {
+    min-height: 436px;
+    background: #eee;
+}
+.container {
+    width: 880px;
+    padding: 0 10px;
+    margin: 0 auto;
+    padding-top: 28px;
+}
+.main-menu-logo {
+    float: left;
+    margin-right: 161px;
+}
+.main-menu-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+    width: 580px;
+    padding-top: 26px;
+}
+.main-menu-menu li{
+    display: block;
+    float: left;
+}
+.main-menu-menu a {
+    display: block;
+    color: black;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 24px;
+}
+.main-menu-menu .main-card {
+    float: right;
+}
+.main-card a {
+    padding-right: 0;
+}
