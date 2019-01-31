@@ -181,6 +181,7 @@ body {
 .btn-red:active {
     background-color: #b63538;
     border-top: 3px solid #9b2d30;
+    padding-top: 7px;
 }
 .btn-green {
     background: #00ca74;
@@ -191,6 +192,7 @@ body {
 .btn-green:active {
     background-color: #009053;
     border-top: 3px solid #007b47;
+    padding-top: 7px;
 }
 .btn-yellow {
     background: #efc84a;
@@ -201,6 +203,7 @@ body {
 .btn-yellow:active {
     background-color: #c09b24;
     border-top: 3px solid #c2ad6a;
+    padding-top: 7px;
 }
 .slider-show {
     z-index: 3;
@@ -256,7 +259,7 @@ span.slider-show::before {
 .slider-1.slider-show::after {
     left: 408px;
 }
-.service-block {
+.service-block, .about{
     padding: 80px 0;
     border-bottom: 2px solid #f4f4f4;
 }
@@ -292,4 +295,94 @@ span.slider-show::before {
 }
 .service-item .btn {
     width: 120px;
+}
+.about-block-left {
+    float: left;
+    width: 580px;
+    margin-right: 20px;
+    padding-right: 40px;
+}
+.about-block-right {
+    float: right;
+    width: 230px;
+}
+.about-block h2 {
+    margin: 0;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.about-block p {
+    margin: 20px 0;
+}
+.about-block p:last-child {
+    margin-bottom: 0;
+}
+.about-block h3 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+.about-block ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.about-block li {
+    padding-left: 37px;
+    display: block;
+    position: relative;
+    margin-bottom: 23px;
+}
+.about-block li:last-child {
+    margin-bottom: 0;
+}
+.about-block li::before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 2px;
+    background-color: #fb565a;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+.about-block figure {
+    margin: 0;
+    padding: 0;
+    margin-top: -20px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+}
+.about-block img {
+    display: block;
+    width: 188px;
+    height: 77px;
+}
+.logo-sign {
+    text-align: center;
+}
+.logo-sign span {
+    display: inline;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding: 0 15px;
+    background: white;
+    position: relative;
+    z-index: 3;
+}
+.logo-sign::after {
+    content: "";
+    display: block;
+    position: relative;
+    border-bottom: 2px solid #eeeeee;
+    top: -13px;
+    z-index: 1;
 }
