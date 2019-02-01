@@ -386,3 +386,58 @@ span.slider-show::before {
     top: -13px;
     z-index: 1;
 }
+
+.portfolio {
+    min-height: 168px;
+    border-bottom: 2px solid #f4f4f4;
+    margin-bottom: 85px;
+}
+.portfolio-item {
+    float: left;
+    display: inline-block;
+    width: 230px;
+    margin-right: 80px;
+    padding-left: 10px;
+    line-height: 168px;
+}
+.portfolio-item:last-child {
+    margin-right: 0;
+}
+.portfolio-item img {
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.2;
+}
+.portfolio-item:hover img, .portfolio-item:active img {
+    opacity: 1;
+}
+.footer-map {
+    min-height: 418px;
+    border-top: 1px solid #fff; 
+    background: #fff url('../img/map.jpg') no-repeat center -150px;
+}
+.footer-social {
+    min-height: 216px;
+}
+.contacts {
+    width: 202px;
+    background-color: #fff;
+    padding-top: 1px;
+    margin-top: 88px;
+    padding: 27px 24px;
+}
+.contacts h2 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 16px;
+}
+.contacts p {
+    margin: 0;
+    margin-bottom: 18px;
+}
+.contacts .btn {
+    width: 180px;
+}
