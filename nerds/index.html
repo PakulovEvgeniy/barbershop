@@ -177,10 +177,10 @@
             spans[i-1].classList.add('slider-show'); 
         }
 
-        for (var j = 0; j<spans.length; j++) {
-          spans[j].indexShow = j;
+        for (let j = 0; j<spans.length; j++) {
+          //spans[j].indexShow = j;
           spans[j].addEventListener('click', function (event) {
-             i = event.target.indexShow;
+             i = j;
              setShow(); 
           })
         }
